@@ -1,0 +1,16 @@
+[project]
+name = "organizze-mcp-server"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]",
+    "httpx",
+    "python-dotenv",
+]
+
+[project.scripts]
+organizze-mcp = "server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

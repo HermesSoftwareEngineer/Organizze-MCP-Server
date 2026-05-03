@@ -10,8 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY client.py server.py ./
 COPY tools/ tools/
 
-# Cloud Run injeta PORT automaticamente; Streamable HTTP é o transporte remoto
-ENV TRANSPORT=streamable-http
+# Cloud Run injeta PORT automaticamente; SSE é o transporte remoto
+ENV TRANSPORT=sse
 
 EXPOSE 8080
 
